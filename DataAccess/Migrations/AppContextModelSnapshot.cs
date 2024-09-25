@@ -29,6 +29,9 @@ namespace DataAccess.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("Check")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("text");

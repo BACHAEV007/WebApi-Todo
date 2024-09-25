@@ -10,25 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69834ae4-bf2b-414a-a6cb-0b8407a104d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinnesLogic/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAccess/AppContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAccess/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAccess/INoteRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAccess/Note.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAccess/NoteRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/NoteController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/WebApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataAccess/NoteDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/dataSources/ed596c57-95c3-4544-bd0f-2652b3009969.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/dataSources/ed596c57-95c3-4544-bd0f-2652b3009969.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/dataSources/ed596c57-95c3-4544-bd0f-2652b3009969/storage_v2/_src_/database/NoteDb.MHBsiw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/dataSources/ed596c57-95c3-4544-bd0f-2652b3009969/storage_v2/_src_/database/NoteDb.MHBsiw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/INoteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/INoteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/Migrations/20240921194023_Init.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/Migrations/20240921194023_Init.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/Migrations/AppContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/Migrations/AppContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/Note.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/NoteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/NoteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/NoteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/NoteController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +33,29 @@
     <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BACHAEV007&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BACHAEV007/WebApi-Todo.git&quot;,
+    &quot;accountId&quot;: &quot;78e5ed00-486d-435a-9782-0bdbd6ef80ae&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06c046bf69aa4f768c77e50706275b1b26a820/ae/ee8ae81a/DbSet`1.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -50,27 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.WebApi: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.WebApi: http.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.webpack",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebApi: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.webpack&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: http">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: https">
     <configuration name="WebApi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApi/WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -127,16 +143,73 @@
       <updated>1726946641292</updated>
       <workItem from="1726946642585" duration="3020000" />
       <workItem from="1727004400988" duration="3209000" />
-      <workItem from="1727007863475" duration="4665000" />
+      <workItem from="1727007863475" duration="9179000" />
+      <workItem from="1727080637563" duration="6640000" />
+      <workItem from="1727162243230" duration="8825000" />
+      <workItem from="1727254767048" duration="471000" />
+      <workItem from="1727277532069" duration="1066000" />
+      <workItem from="1727282647614" duration="484000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1727015099380</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727015099380</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init commit v2">
+      <option name="closed" value="true" />
+      <created>1727015120586</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727015120586</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init commit v2">
+      <option name="closed" value="true" />
+      <created>1727015403128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727015403128</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="init commit" />
+    <MESSAGE value="init commit v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit v2" />
   </component>
 </project>
