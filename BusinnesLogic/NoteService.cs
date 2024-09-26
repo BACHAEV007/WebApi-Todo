@@ -14,24 +14,20 @@ internal class NoteService(INoteRepository noteRepository) : INoteService
         await noteRepository.CreateAsync(note, cancellationToken);
     }
 
-    public async Task<List<NoteDto>> GetAllAsync(CancellationToken cancellationToken = default)
+    public async Task<List<Note>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         var notes = await noteRepository.GetAllAsync(cancellationToken);
         if (notes is null)
         {
             throw new Exception("No notes found");
         }
-        return notes.Select(note => new NoteDto
-        {
-            Id = note.Id,
-            Text = note.Text ?? string.Empty,
-            Check = note.Check
-        }).ToList();
+
+        return notes;
     }
 
-    public async Task UpdateAsync(NoteDto noteDto, CancellationToken cancellationToken = default)
+    public async Task UpdateAsync(int id, NoteDto noteDto, CancellationToken cancellationToken = default)
     {
-        var note = await noteRepository.GetByIdAsync(noteDto.Id, cancellationToken);
+        var note = await noteRepository.GetByIdAsync(id, cancellationToken);
         if (note is null)
         {
             throw new Exception("No note found");

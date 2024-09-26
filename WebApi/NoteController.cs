@@ -5,38 +5,38 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebApi;
 
 [ApiController]
-[Route("Note")]
+[Route("Task")]
 public class NoteController(INoteService noteService) : ControllerBase
 {
-    [HttpPost]
+    [HttpPost("CreateTask")]
     public async Task<IActionResult> CreateAsync([FromBody] NoteDto noteDto)
     {
         await noteService.CreateAsync(noteDto);
         return NoContent();
     }
 
-    [HttpGet]
+    [HttpGet("GetTasks")]
     public async Task<IActionResult> GetAllAsync()
     {
         var notes = await noteService.GetAllAsync();
         return Ok(notes);
     }
 
-    [HttpPut("UpdateTask")]
-    public async Task<IActionResult> UpdateAsync([FromBody] NoteDto noteDto)
+    [HttpPut("UpdateTask/{id:int}")]
+    public async Task<IActionResult> UpdateAsync(int id, [FromBody] NoteDto noteDto)
     {
-        await noteService.UpdateAsync(noteDto);
+        await noteService.UpdateAsync(id, noteDto);
         return NoContent();
     }
 
-    [HttpDelete("{id:int}")]
+    [HttpDelete("DeleteTask/{id:int}")]
     public async Task<IActionResult> DeleteAsync(int id)
     {
         await noteService.DeleteAsync(id);
         return NoContent();
     }
 
-    [HttpPut("complete/{id:int}")]
+    [HttpPut("CompleteTask/{id:int}")]
     public async Task<IActionResult> ChangeCompleteAsync(int id)
     {
         await noteService.ChangeCompleteAsync(id);

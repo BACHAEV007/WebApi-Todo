@@ -48,7 +48,6 @@ internal class NoteRepository(AppContext context) : INoteRepository
     
     public async Task DeleteAllAsync(CancellationToken cancellationToken = default)
     {
-        ResetSequenceAsync(cancellationToken);
         var allNotes = await GetAllAsync(cancellationToken);
         foreach (var note in allNotes)
         {
@@ -56,9 +55,5 @@ internal class NoteRepository(AppContext context) : INoteRepository
         }
     }
     
-    public async Task ResetSequenceAsync(CancellationToken cancellationToken = default)
-    {
-        var sql = "ALTER SEQUENCE notes_id_seq RESTART WITH 1;";
-        await _dbContext.Database.ExecuteSqlRawAsync(sql, cancellationToken);
-    }
+
 }
