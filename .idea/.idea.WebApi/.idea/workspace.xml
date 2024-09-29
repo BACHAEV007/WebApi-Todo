@@ -9,13 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69834ae4-bf2b-414a-a6cb-0b8407a104d8" name="Changes" comment="do todo api">
+    <list default="true" id="69834ae4-bf2b-414a-a6cb-0b8407a104d8" name="Changes" comment="some fix">
+      <change afterPath="$PROJECT_DIR$/DataAccess/NoteTextDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/NoteDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/NoteDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccess/NoteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/NoteRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/NoteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/NoteController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: http">
     <configuration name="WebApi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApi/WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -141,7 +143,8 @@
       <workItem from="1727162243230" duration="8825000" />
       <workItem from="1727254767048" duration="471000" />
       <workItem from="1727277532069" duration="1066000" />
-      <workItem from="1727282647614" duration="2825000" />
+      <workItem from="1727282647614" duration="4565000" />
+      <workItem from="1727610259701" duration="13349000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -175,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727283163020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some fix">
+      <option name="closed" value="true" />
+      <created>1727336242580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727336242580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +223,7 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="init commit v2" />
     <MESSAGE value="do todo api" />
-    <option name="LAST_COMMIT_MESSAGE" value="do todo api" />
+    <MESSAGE value="some fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fix" />
   </component>
 </project>

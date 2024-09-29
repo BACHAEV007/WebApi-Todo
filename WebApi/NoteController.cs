@@ -11,8 +11,8 @@ public class NoteController(INoteService noteService) : ControllerBase
     [HttpPost("CreateTask")]
     public async Task<IActionResult> CreateAsync([FromBody] NoteDto noteDto)
     {
-        await noteService.CreateAsync(noteDto);
-        return NoContent();
+        Note createNote = await noteService.CreateAsync(noteDto);
+        return Ok(createNote);
     }
 
     [HttpGet("GetTasks")]
@@ -23,9 +23,9 @@ public class NoteController(INoteService noteService) : ControllerBase
     }
 
     [HttpPut("UpdateTask/{id:int}")]
-    public async Task<IActionResult> UpdateAsync(int id, [FromBody] NoteDto noteDto)
+    public async Task<IActionResult> UpdateAsync(int id, [FromBody] NoteTextDto noteTextDto)
     {
-        await noteService.UpdateAsync(id, noteDto);
+        await noteService.UpdateAsync(id, noteTextDto);
         return NoContent();
     }
 
