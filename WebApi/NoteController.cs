@@ -26,7 +26,7 @@ public class NoteController(INoteService noteService) : ControllerBase
     public async Task<IActionResult> UpdateAsync(int id, [FromBody] NoteTextDto noteTextDto)
     {
         await noteService.UpdateAsync(id, noteTextDto);
-        return NoContent();
+        return Ok();
     }
 
     [HttpDelete("DeleteTask/{id:int}")]

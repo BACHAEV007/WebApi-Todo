@@ -9,15 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69834ae4-bf2b-414a-a6cb-0b8407a104d8" name="Changes" comment="some fix">
-      <change afterPath="$PROJECT_DIR$/DataAccess/NoteTextDto.cs" afterDir="false" />
+    <list default="true" id="69834ae4-bf2b-414a-a6cb-0b8407a104d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinnesLogic/INoteService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinnesLogic/NoteService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccess/NoteDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/NoteDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/NoteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/NoteController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +138,8 @@
       <workItem from="1727254767048" duration="471000" />
       <workItem from="1727277532069" duration="1066000" />
       <workItem from="1727282647614" duration="4565000" />
-      <workItem from="1727610259701" duration="13349000" />
+      <workItem from="1727610259701" duration="13480000" />
+      <workItem from="1727706430390" duration="12732000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -186,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727336242580</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="connect with front">
+      <option name="closed" value="true" />
+      <created>1727637696579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727637696579</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +227,7 @@
     <MESSAGE value="init commit v2" />
     <MESSAGE value="do todo api" />
     <MESSAGE value="some fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fix" />
+    <MESSAGE value="connect with front" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect with front" />
   </component>
 </project>
